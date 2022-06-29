@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elementos HTML</title>
+</head>
+
+<body>
+    <!-- Headings -->
+    <h1>Titilu h1</h1>
+    <h2>Titilu h2</h2>
+    <h3>Titilu h3</h3>
+    <h4>Titilu h4</h4>
+    <h5>Titilu h5</h5>
+    <h6>Titilu h6</h6>
+
+    <!-- Salto de linea -->
+    <br>
+
+    <!-- Linea horizontal-->
+    <hr>
+    <!-- Parrafos para trabajar con textos -->
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore <b> impedit</b>, <i> debitis adipisci vero</i> porro error accusantium hic <u> eligendi quod qui eius</u> aspernatur, magni saepe consequatur dicta non!
+        <!-- | <b> para negrita | <i> para cursiva | <u> subrayar -->
+    </p>
+    <!-- Combinacion de todos lo elementos de arriba-->
+    <p>
+        <b>
+            <i>
+                <u>
+                    Nicolas Neira Lopez
+                </u>
+            </i>
+        </b>
+    </p>
+    <br>
+    <hr>
+    <!-- imagenes -->
+    <img src="" alt="aqui habia algo">
+    <img src="/HTML/assets/img/imgHtml.png" alt="icono html" width="100px" height="100px">
+    <!--Al agregar solo width o height, la imagen mantendra la proporcion-->
+    <!-- Buenas practicas tener alt, dentro de assets: carpeta img para imagenes, css ,js -->
+    <img src="/HTML/assets/img/53j.png" alt="iconos html5 css3 y javascript" width="200px">
+    <br>
+    <hr>
+
+    <!-- Links o hipervinculos -->
+    <a href="https://www.generation.org/">Visitar Generation</a>
+    <br>
+    <!-- url valor absoluto, redirige a otra pagina web -->
+    <!-- target=_"blank" = abre link en una nueva pestaña -->
+    <a href="https://www.lun.com/" target="_blank">Acceder a Lun.com</a>
+    <br>
+    <!-- url de valor relativo, redirije dentro del mism sistema web -->
+    <a href="pagina2.html">Ir a la pagina 2</a>
+    <br>
+    <!-- url valor de anclaje, movernos dentro de la misma pagina. ejem: subir o bajar a las secciones -->
+    <a href="#nombre">ir a seccion de la pagina</a>
+    <br>
+    <!--  -->
+    <a href="https://www.generation.org/">
+        <img src="/HTML/assets/img/generation.webp" alt="logo generation" width="100px">
+    </a>
+    <br>
+    <hr>
+    <!-- Listas : Ordenadas y las No ordenadas -->
+    <!-- Lista Ordenada -->
+    <!-- order list = lista ordenada -->
+    <ol>
+        <!-- List item = lista de item-->
+        <li>grupo 1</li>
+        <li>grupo 2</li>
+        <li>grupo 3</li>
+        <li>grupo 4</li>
+        <li>grupo 5</li>
+        <li>grupo 6</li>
+        <!-- Subsecciones -->
+        <li> grupo 7
+            <ol>
+                <li>grupo 7.1</li>
+                <li>grupo 7.2</li>
+            </ol>
+        </li>
+    </ol>
+    <br>
+    <!-- lista No ordenada -->
+    <ul>
+        <!-- List item = lista de item-->
+        <li>grupo 1</li>
+        <li>grupo 2</li>
+        <li>grupo 3</li>
+        <li>grupo 4</li>
+        <li>grupo 5</li>
+        <li>grupo 6</li>
+        <!-- Subsecciones -->
+        <li> grupo 7
+            <ul>
+                <li>grupo 7.1</li>
+                <li>grupo 7.2</li>
+                <li>
+                    <!-- buenas practicas agregar marcador <ul> -->
+                    <ul>
+                        <!-- Podemos agregar links dentro de las listas -->
+                        <li><a href="">Menu</a></li>
+                        <li>Curso B</li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+    </ul>
+
+    <!-- Recorrer de manera dinamica en JAVA -->
+    <!-- Para hacer esto podriamos utilizar js -->
+    <!--
+    <ul>
+        <c:forEach items="${lista}" var="item">
+            <li>${item}</li>
+        </c:forEach>
+    </ul>-->
+    <br>
+    <hr>
+
+    <!-- Tablas -->
+    <table>
+        <!-- Cabeceras o titulos -->
+        <thead>
+            <tr>
+                <!-- <th> = Columnas -->
+                <th>Edad</th>
+                <th>Nombre</th>
+                <th>Apellido Paterno</th>
+                <th>Apellido Materno</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Cuerpo y filas de la tabla -->
+            <tr>
+                <!-- <td> = Filas -->
+                <td>27</td>
+                <td>Nicolas</td>
+                <td>Neira</td>
+                <td>Lopez</td>
+            </tr>
+            <tr>
+                <!-- <td> = Filas -->
+                <td>20</td>
+                <td>Maximiliano</td>
+                <td>Neira</td>
+                <td>Lopez</td>
+            </tr>
+
+        </tbody>
+    </table>
+
+
+
+</body>
+
+</html>
