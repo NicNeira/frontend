@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS | Elementos de estilo</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        
+        p {
+            /* Ancho | Bloque No texto */
+            width: 200px;
+            /* alto */
+            height: 50px;
+            /* separacion entre las lineas de texto */
+            line-height: 1.5;
+            /* establece qué tan gruesos o delgados deben mostrarse los caracteres en el texto. */
+            font-weight: 900;
+        }
+        
+        div {
+            width: 400px;
+            height: 400px;
+            /* overflow: scroll agrega una barra para desplazarce */
+            overflow: auto;
+            /* background general | Color | imagen | no-repeat= que no se repita dentro del div | center: centrar la imagen  */
+            background: blue url(assets/img/imgHtml.png) no-repeat center;
+            /* backgroun-color: color del fondo | es especifico */
+            background-color: antiquewhite;
+            /* backgroun-size: tamaño del fondo | es especifico */
+            background-size: 50%;
+            /* border: agrega un borde al bloque | tamaño | dotted: punteado | color | es especifico */
+            border: 3px dotted red;
+            /* backgroun-top-color: color del borde superior | es especifico */
+            border-top-color: rgb(0, 255, 72);
+            /* border-radius: para  agregar bordes curvos del bloque */
+            border-radius: 10px;
+            text-align: center;
+        }
+        /* hexadecimal 16: 01123456789ABCDEF 
+        #12 34 56 ROJO VERGE AZUL (RGB) background-color: #ff0000;
+        */
+        
+        a {
+            /* text-decoration:none quita el subrayado */
+            text-decoration: none;
+        }
+        
+        h1 {
+            /* text-align: center | para centrar el texto con respecto al contenedor */
+            text-align: center;
+            /* font-family para asignar le tipo de fuente */
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            /* Para asignar el tamaño de la fuente */
+            font-size: 10pt;
+        }
+        /* Elementos de posicion | static | relative |absolute | fixed */
+        
+        .estatico {
+            width: 500px;
+            height: 100px;
+            /* static Establece su posicion normal o original | siempre de izquierda a derecha */
+            position: static;
+        }
+        
+        .relativo {
+            width: 500px;
+            height: 100px;
+            /* desplazar desde la parte izquierda */
+            left: 50px;
+            /* static Establece su posicion normal o original | siempre de izquierda a derecha */
+            position: relative;
+        }
+        
+        .fijo {
+            /* Ojito Fixed me sirve para hacer le menu fijo | toma la pagina web completa*/
+            width: 500px;
+            height: 100px;
+            /* desplazar desde la parte izquierda | top, rigth buttom, left */
+            left: 50px;
+            top: 0px;
+            /* static Establece su posicion normal o original | siempre de izquierda a derecha */
+            position: fixed;
+        }
+        
+        .absoluto {
+            /* se coloca en relación con el ancestro posicionado más cercano (en lugar de posicionarse en relación con la ventana gráfica, como fijo) */
+            width: 500px;
+            height: 100px;
+            /* desplazar desde la parte izquierda | top, rigth buttom, left */
+            left: 50px;
+            top: 200px;
+            /* static Establece su posicion normal o original | siempre de izquierda a derecha */
+            position: absolute;
+        }
+        
+        .sticky {
+            /* Un elemento con position: sticky;se posiciona en función de la posición de desplazamiento del usuario. */
+            width: 500px;
+            height: 100px;
+            /* static Establece su posicion normal o original | siempre de izquierda a derecha */
+            position: sticky;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <h1>Elementos de estilo</h1>
+        <a href="#">Link de prueba</a>
+        <p>parrafo 1</p>
+    </div>
+    <div class="estatico">
+        <p>Este es un texto con posicionamiento estatico</p>
+    </div>
+    <div class="relativo">
+        <p>Este es un texto con posicionamiento relativo</p>
+    </div>
+    <div class="fijo">
+        <p>Este es un texto con posicionamiento fijo</p>
+    </div>
+    <div class="absoluto">
+        <p>Este es un texto con posicionamiento absoluto</p>
+    </div>
+    <div class="sticky">
+        <p>Este es un texto con posicionamiento sticky</p>
+    </div>
+</body>
+
+</html>
