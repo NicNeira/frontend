@@ -11,6 +11,43 @@
 <body>
     <h1>Estoy en la pagina 2</h1>
     <a href="index.html">Volver a la pagina principal</a>
+    <br>
+    <hr>
+
+    <!-- Jueves - 30 - Junio | Elementos de selecciones -->
+
+    <!-- Radio button -->
+    <!-- name deben ser iguales, para que pertenescan al mismo grupo |id y value tiene que ser iguales -->
+    <!-- al pertenecer al mismo grupo solo se puede seleccionar una opcion -->
+    <h2>Seleccione una opcion</h2>
+    <label for="html">HTML</label><input type="radio" id="html" name="opcion" value="html"><br>
+    <input type="radio" id="css" name="opcion" value="css"> CSS <br>
+    <input type="radio" id="javascript" name="opcion" value="javascript"> javascript <br>
+    <hr>
+    <!-- checkbox -->
+    <!-- url?opciones1=html&opciones2=css&opciones3=js -->
+    <!-- para cada uno de los elementos deben ser unicos (id == name) -->
+    <h2>Seleccione las opciones que quiera</h2>
+    <!-- Agregar label nos permite hacer click en la palabra y realizar la seleccion for=id -->
+    <label for="opciones1"> HTML</label><input type="checkbox" name="opciones1" id="opciones1" value="html"> <br>
+    <input type="checkbox" name="opciones2" id="opciones2" value="css">CSS <br>
+    <input type="checkbox" name="opciones3" id="opciones3" value="js">JavaScript <br>
+    <hr>
+    <!-- Select | Selector | Sirve para selecionar una opcion desde una barra de busqueda-->
+    <h2>Seleccione una opcion</h2>
+    <!-- lenguajes = "eleccion seleccionada" -->
+    <!-- multiple para seleccionar varias opciones a la vez  -->
+    <select name="lenguajes" id="lenguajes" multiple>
+        <!-- selected para definir una opcion predeterminada -->
+        <option value="0" selected>Selecione un lenguaje</option>
+        <option value="1">Java</option>
+        <option value="2">Python</option>
+        <option value="3">JavaScript</option>
+        <option value="4">C#</option>
+        <option value="5">Ruby</option>
+    </select>
+
+
 </body>
 
 </html>
