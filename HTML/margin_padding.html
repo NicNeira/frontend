@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Margin y paddingt</title>
+    <style>
+        #padre {
+            width: 400px;
+            height: 400px;
+            background-color: cadetblue;
+            /* Se puede agregar un margin especifico para cada lado en en sentido horario partiendo por la izquierda | Efecto optico de desplazamiento | lo que hace realmente es agregar un margen (crece de los 4 lados si agregamos solo 1 parametro)*/
+            margin: 100px auto;
+            /* borde para que no se mueva | igual hace que cresca el contenedor */
+            border: 1px solid black;
+            /* Efecto optico del Padding desplazar internamente elementos | agranda desde dentro el contenedor */
+            padding: 100px;
+        }
+        
+        #hijo {
+            width: 40px;
+            height: 40px;
+            background-color: blue;
+            margin: 200px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="padre">
+        <div id="hijo">
+
+        </div>
+    </div>
+</body>
+
+</html>
